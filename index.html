@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- tailwind play cdn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
     <title> green earth </title>
+     <!-- tailwind play cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+                <!-- Font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="bg-green-600 shadow-lg">
@@ -29,7 +31,7 @@
 
             </div>
         </div>
-</nav>
+    </nav>
         <section class="relative bg-green-200 py-16 flex flex-col items-center text-center">
             <img src="./assets/hero-leaf1.png" alt="" class="absolute left-0 top-1/2 transform -translate-y-1/2 h-56">
             <img src="./assets/hero-leaf2.png" alt="" class="absolute right-0 top-1/2 transform -translate-y-1/2 h-56">
@@ -208,6 +210,38 @@
                 </div>
 
 
+                <div class="lg:w-1/4">
+                    <div class="bg-white rounded-lg shadow-sm p-4 sticky top-8 ">
+                        <h2 class="text-lg font-samibold text-gray-800 mb-4">Your Cart</h2>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex item-center justify-betweem text-sm">
+                              <div>
+                                <span class="font-medium">Mango Tree</span>
+                                <br>
+                                <span class="text-gray-500 ml-2">৳500 x 1</span>
+                              </div> 
+                              <button onclick="removeFromcart('Mango Tree')" class="text-sm text-red-500 hover:text-red-700">
+                                    <i class="fa-solid fa-xmark"></i>
+                              </button> 
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <div>
+                                   <span class="font-medium">Guava Tree</span>
+                                <br>
+                                <span class="text-gray-500 ml-2">৳500 x 1</span> 
+                                </div>
+                                <button onclick="removeFromcart('Guava Tree')" class="text-sm text-red-500 hover:text-red-700">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="flex justify-between font-semibold text-lg mb-4">
+                            <span>Total:</span>
+                            <span>৳1000</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
