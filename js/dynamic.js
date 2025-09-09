@@ -49,7 +49,7 @@ async function loadtrees(catid, btn) {
             div.className = "bg-white rounded-lg shadow-sm overflow-hidden";
             div.innerHTML = `
             <div class="h-48 bg-gray-200 flex items-center justify-center">
-                <img src="${tree.image}" alt="${tree.name}" class="h-full object-cover"/>
+                <img src="${tree.image}" alt="${tree.name}" class="w-full h-full object-cover"/>
                 </div>
                 <div class="p-4">
                 <h3 onclick="showDetails('${tree.id}')"
